@@ -11,7 +11,7 @@
     "webtorrent": "^0.102.1"
   },
   "scripts": {
-    "watch": "watchify ./src/p2pchat.js -o bundle.js"
+    "watch": "watchify ./src/test.js -o bundle.js"
   },
   "devDependencies": {
     "browserify": "^16.2.2",

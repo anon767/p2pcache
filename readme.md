@@ -1,24 +1,16 @@
 # P2PChatjs
 
-A simple P2P Chat for Javascript (Browser and NodeJS)
+A simple P2P Cache for Javascript (Browser and NodeJS)
 
+Basically everyone who loads the script, is able to save and provide hashed Data to every other Peer.
+This is called a distributed Cache.
 ## Usage
 
-Clone and navigate to index.html or at 
+require bundle.js and use it like:
 
-http://www.thecout.com/p2pchat
+```javascript
+const p2pcache = require("./p2pcache");
+p2pcache.save("key","value");
+let fetch = p2pcache.get("key");
 
-## Styles
-
-comes with two style.css and style02.css
-
-## Dependencies
-
-- Dreamtime
-    - Webtorrent
-    - webrtc
-- p2p-graph
-
-## Screenshot
-
-![Screenshot](assets/screenie.png "Screenshot")
+```

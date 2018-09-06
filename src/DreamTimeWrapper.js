@@ -5,7 +5,7 @@ var dreamTime;
 var observer = [];
 
 function send(wires, msg, cb) {
-    dreamTime.client.sendSingle(dreamTime.client, msg, cb, wires);
+    dreamTime.sendSingle(dreamTime.client, msg, cb, wires);
 }
 
 
